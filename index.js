@@ -5,10 +5,10 @@ let somenum = Math.floor(Math.random() * 100); //Random number generator that go
 //object parameter
 var client = new twitter({
     //Consumer key and access token for twitter
-    consumer_key: 'XslyyX3t5og80PagmBr6SuQNO',
-    consumer_secret: 'NZV8QNBLOj855U1r8oKVmppp0sgwuHrwzWByqXV2xMqkSOFMyq',
-    access_token_key: '1000491165072801792-TeXY9PvJwj78x7tSg7fdIgU3MscCqF',
-    access_token_secret: 'Fmz0EHNIbk1RbiliV0ZUokjfrracgnK23QiQ9ndcOp1hK'
+    consumer_key: process.env.consumer_key,
+    consumer_secret: process.env.consumer_secret,
+    access_token_key: process.env.token_key,
+    access_token_secret: process.env.token_secret 
 });
 
 //twitter message
